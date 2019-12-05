@@ -18,6 +18,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
+import javax.swing.border.MatteBorder;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.CompoundBorder;
+import javax.swing.UIManager;
 
 public class RegistrationForm {
 	int flag = 0;
@@ -386,6 +390,7 @@ public class RegistrationForm {
 		panel_6.setLayout(null);
 
 		JButton btnExit = new JButton("Exit");
+		btnExit.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		btnExit.setFont(new Font("Times New Roman", Font.PLAIN, 14));
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -396,6 +401,7 @@ public class RegistrationForm {
 		panel_6.add(btnExit);
 
 		JButton btnReset = new JButton("Reset");
+		btnReset.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		btnReset.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -451,6 +457,7 @@ public class RegistrationForm {
 		panel_6.add(btnReset);
 
 		JButton btnSubmit = new JButton("Submit");
+		btnSubmit.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		btnSubmit.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -460,7 +467,7 @@ public class RegistrationForm {
 				String email = textField_3.getText().toString();
 				String Rcode = textField_4.getText().toString();
 				//
-				// check if subjects selected are less than 6
+				// check if subjects selected are less than 5
 				//
 				if (checkBox1.isSelected()) {
 					s1++;
@@ -594,6 +601,7 @@ public class RegistrationForm {
 		panel_6.add(btnSubmit);
 
 		JButton btnSaveData = new JButton("Save Data");
+		btnSaveData.setBorder(new LineBorder(new Color(0, 0, 0), 2));
 		btnSaveData.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnSaveData.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
